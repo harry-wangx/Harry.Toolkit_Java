@@ -13,14 +13,14 @@ import java.util.Random;
  * @author 王海龙
  */
 public final class IdCreator {
-	long timestamp = 0;// 当前时间戳
-	long index = 0;// 索引/计数器
-	int instanceID;// 实例编号
-	int indexBitLength;// 索引可用位数
-	long tsMax = 0;// 时间戳最大值
-	long indexMax = 0;
+	private long timestamp = 0;// 当前时间戳
+	private long index = 0;// 索引/计数器
+	private int instanceID;// 实例编号
+	private int indexBitLength;// 索引可用位数
+	private long tsMax = 0;// 时间戳最大值
+	private long indexMax = 0;
 
-	static IdCreator _default = new IdCreator();
+	private static IdCreator _default = new IdCreator();
 
 	/**
 	 * ID生成器
